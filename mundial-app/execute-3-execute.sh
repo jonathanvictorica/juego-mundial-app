@@ -1,0 +1,1 @@
+java -jar ./target/mundial-app.jar
