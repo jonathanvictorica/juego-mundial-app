@@ -1,0 +1,68 @@
+
+_
+java:S1192°"HDefine a constant instead of duplicating this literal "Tahoma" 10 times.(Ò¿Ï•
+f	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÙ’€
+?
+java:S1604‚"(Make this anonymous inner class a lambda(²¥‘ì
+D
+java:S1604Š"(Make this anonymous inner class a lambda(òÇÆÀúÿÿÿÿ
+D
+java:S1604’"(Make this anonymous inner class a lambda(àäîÈÿÿÿÿÿ
+?
+java:S1604š"(Make this anonymous inner class a lambda(¹Àğó
+?
+java:S1604¢"(Make this anonymous inner class a lambda(“È¸©
+?
+java:S1604ª"(Make this anonymous inner class a lambda(Å¨¬¶
+n	java:S116‹"SRename this field "VerAlbum" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶¤Šãüÿÿÿÿ
+y
+java:S4144ü"bUpdate this method so that its implementation is not identical to "getCmdVolverinicio" on line 71.(¢õ” 
+v
+java:S1450"_Remove the "cmdVolverinicio1" field and declare it as a local variable in the relevant methods.(­Úéë
+r
+java:S1450‘"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+s
+java:S1450’"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ
+r
+java:S1450“"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+r
+java:S1450”"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+m
+java:S1450•"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã
+m
+java:S1450–"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®
+r
+java:S1450—"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ
+m
+java:S1450˜"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ
+m
+java:S1450™"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢
+r
+java:S1450š"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óĞşÿÿÿÿ
+K
+java:S1948")Make "partida" transient or serializable.(ğ‘Şáüÿÿÿÿ8óñäàÔ0
+V	java:S125T"<This block of commented-out lines of code should be removed.(á›¢ğÿÿÿÿÿ
+G
+java:S1874^",Remove this use of "hide"; it is deprecated.(º«úÿÿÿÿ
+A
+java:S1172Ä"*Remove this unused method parameter "evt".(Üİ·ñ
+O
+java:S1874Ç",Remove this use of "show"; it is deprecated.(¸¼Ô¤ùÿÿÿÿ8¯òäàÔ0
+H
+java:S1874È",Remove this use of "hide"; it is deprecated.(›¿åùùÿÿÿÿ
+A
+java:S1172Ì"*Remove this unused method parameter "evt".(Ú—¼¶
+F
+java:S1172Ğ"*Remove this unused method parameter "evt".(Ÿ•Ûòüÿÿÿÿ
+H
+java:S1874Ö",Remove this use of "hide"; it is deprecated.(›¿åùùÿÿÿÿ
+F
+java:S1172Ù"*Remove this unused method parameter "evt".(şÍæ“ÿÿÿÿÿ
+F
+java:S1172ä"*Remove this unused method parameter "evt".(îš”¡ÿÿÿÿÿ
+O
+java:S1874ê",Remove this use of "show"; it is deprecated.(¯õŞÑúÿÿÿÿ8¾òäàÔ0
+O
+java:S1874ï",Remove this use of "hide"; it is deprecated.(›¿åùùÿÿÿÿ8¿òäàÔ0
+A
+java:S1172ò"*Remove this unused method parameter "evt".(åÃµÔ

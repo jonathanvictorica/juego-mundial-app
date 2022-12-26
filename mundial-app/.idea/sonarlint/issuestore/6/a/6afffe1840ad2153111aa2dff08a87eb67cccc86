@@ -1,0 +1,17 @@
+
+g	java:S117Þ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„‰ªô
+D
+java:S1604Ê"(Make this anonymous inner class a lambda( ­ÓŒüÿÿÿÿ
+D
+java:S1604Ñ"(Make this anonymous inner class a lambda(Ê—­¨ûÿÿÿÿ
+?
+java:S1604Ø"(Make this anonymous inner class a lambda(þŒÎú
+w	java:S116Â"URename this field "FondoAlbum" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£¶¸Šýÿÿÿÿ8‚ÑÓßÔ0
+G
+java:S1172ë"*Remove this unused method parameter "evt".(þ»±8«ÑÓßÔ0
+O
+java:S1874ì",Remove this use of "hide"; it is deprecated.(›¿åùùÿÿÿÿ8«ÑÓßÔ0
+M
+java:S1172ñ"*Remove this unused method parameter "evt".(Ð»þëùÿÿÿÿ8­ÑÓßÔ0
+G
+java:S1172ü"*Remove this unused method parameter "evt".(›ÄÍ68¯ÑÓßÔ0

@@ -1,0 +1,50 @@
+
+q
+java:S1192"VDefine a constant instead of duplicating this literal "com.mysql.jdbc.Driver" 4 times.(¹µÖÁüÿÿÿÿ
+
+java:S1192"dDefine a constant instead of duplicating this literal "jdbc:mysql://localhost:3306/MUNDIAL" 4 times.(¨àĞ”ÿÿÿÿÿ
+i
+java:S1192"NDefine a constant instead of duplicating this literal "nombrepartida" 3 times.(ú±Æ€ùÿÿÿÿ
+^
+java:S1192"HDefine a constant instead of duplicating this literal "mensaje" 5 times.(’ğĞ¤
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨õàÖ
+j
+java:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(ˆÑ¸öıÿÿÿÿ
+c
+java:S2095D"HUse try-with-resources or close this "Connection" in a "finally" clause.(¨àĞ”ÿÿÿÿÿ
+]
+java:S20952"GUse try-with-resources or close this "Statement" in a "finally" clause.(‚€²
+j
+java:S2095E"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(³üÜÏúÿÿÿÿ
+e
+java:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(‘Úô·
+c
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(¨àĞ”ÿÿÿÿÿ
+]
+java:S2095#"GUse try-with-resources or close this "Statement" in a "finally" clause.(‚€²
+U
+java:S1118":Add a private constructor to hide the implicit public one.(ğĞóüÿÿÿÿ
+H
+java:S4925"-Remove this "Class.forName()", it is useless.(¹µÖÁüÿÿÿÿ
+H
+java:S1905"-Remove this unnecessary cast to "Connection".(¨àĞ”ÿÿÿÿÿ
+D
+java:S2115")Add password protection to this database.(¨àĞ”ÿÿÿÿÿ
+H
+java:S4925"-Remove this "Class.forName()", it is useless.(¹µÖÁüÿÿÿÿ
+C
+java:S1905"-Remove this unnecessary cast to "Connection".(â«Â›
+?
+java:S2115")Add password protection to this database.(â«Â›
+H
+java:S49250"-Remove this "Class.forName()", it is useless.(¹µÖÁüÿÿÿÿ
+C
+java:S19051"-Remove this unnecessary cast to "Connection".(â«Â›
+?
+java:S21151")Add password protection to this database.(â«Â›
+H
+java:S4925C"-Remove this "Class.forName()", it is useless.(¹µÖÁüÿÿÿÿ
+H
+java:S1905D"-Remove this unnecessary cast to "Connection".(¨àĞ”ÿÿÿÿÿ
+D
+java:S2115D")Add password protection to this database.(¨àĞ”ÿÿÿÿÿ

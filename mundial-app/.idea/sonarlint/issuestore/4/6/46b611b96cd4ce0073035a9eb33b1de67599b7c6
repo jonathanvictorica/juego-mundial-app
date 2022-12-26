@@ -1,0 +1,15 @@
+
+]
+java:S11922"GDefine a constant instead of duplicating this literal "Tahoma" 3 times.(ò…¼¯
+C
+java:S1604>"(Make this anonymous inner class a lambda(­Ê°Âşÿÿÿÿ
+t
+java:S1450"YRemove the "cmdAceptar" field and declare it as a local variable in the relevant methods.(‘™œ¼üÿÿÿÿ
+r
+java:S1450€"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+r
+java:S1450"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+v
+java:S1450‚"ZRemove the "panelImage1" field and declare it as a local variable in the relevant methods.(òùËúúÿÿÿÿ
+@
+java:S1172o"*Remove this unused method parameter "evt".(ä¨ı

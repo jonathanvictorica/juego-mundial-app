@@ -1,0 +1,85 @@
+
+E
+java:S3740'"/Provide the parametrized type for this generic.(Õë‡ô
+J
+java:S3740*"/Provide the parametrized type for this generic.(­õƒÊşÿÿÿÿ
+J
+java:S37404"/Provide the parametrized type for this generic.(’´¸üÿÿÿÿÿ
+K
+java:S3740œ"/Provide the parametrized type for this generic.(¸“¦Ôıÿÿÿÿ
+F
+java:S3740Ÿ"/Provide the parametrized type for this generic.(†½…Ü
+K
+java:S3740Ä"/Provide the parametrized type for this generic.(ÿ¤à“ûÿÿÿÿ
+K
+java:S3740È"/Provide the parametrized type for this generic.(§¡ŠÓúÿÿÿÿ
+E
+java:S3740Ü"/Provide the parametrized type for this generic.(û¶Š'
+F
+java:S3740à"/Provide the parametrized type for this generic.(©ó“ı
+f	java:S117Y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şôû§
+f	java:S117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß»±ª
+f	java:S117s"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä²Ã
+g	java:S117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À®ªı
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãôÿ
+g	java:S117š"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Ûøî
+l	java:S117ò"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï·½„üÿÿÿÿ
+l	java:S117ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷†™Áüÿÿÿÿ
+g	java:S117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã”‡“
+g	java:S117À"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ®·Ù
+l	java:S117ñ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ£Šãıÿÿÿÿ
+g	java:S117ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉÚ« 
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÍè©ûÿÿÿÿ
+g	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îè„Ş
+g	java:S117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•÷Œ
+g	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óëà¦
+>
+java:S1604>"(Make this anonymous inner class a lambda(ì©·º
+>
+java:S1604C"(Make this anonymous inner class a lambda(ŠÕù¸
+C
+java:S1604J"(Make this anonymous inner class a lambda(ÔÕšÚùÿÿÿÿ
+C
+java:S1604Q"(Make this anonymous inner class a lambda(á´ù¶ùÿÿÿÿ
+o
+java:S1104"TMake COMBITOS a static final constant or non-public and provide accessors if needed.(ßÓÁ‡ıÿÿÿÿ
+a	java:S116"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅêÇ¹
+m	java:S116"SRename this field "COMBITOS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßÓÁ‡ıÿÿÿÿ
+o	java:S116–"TRename this field "FIGURITA1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍˆÄˆûÿÿÿÿ
+i	java:S116—"TRename this field "FIGURITA2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê³“7
+o	java:S116˜"TRename this field "FIGURITA3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÆúÿÿÿÿ
+o	java:S116™"TRename this field "FIGURITA4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´¿æ§ÿÿÿÿÿ
+o	java:S116š"TRename this field "FIGURITA5" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨¼ò·ûÿÿÿÿ
+o	java:S116›"TRename this field "FIGURITA6" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”Â­¯üÿÿÿÿ
+u
+java:S1450¡"YRemove the "panelImage" field and declare it as a local variable in the relevant methods.(‹çØïıÿÿÿÿ
+L
+java:S1948"*Make "COMBITOS" transient or serializable.(ßÓÁ‡ıÿÿÿÿ8òåáÔ0
+F
+java:S1172ğ"*Remove this unused method parameter "evt".(…ÖÓÿÿÿÿÿ
+A
+java:S1172ù"*Remove this unused method parameter "evt".(¤´§¤
+N
+java:S1135ú"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+A
+java:S1172ı"*Remove this unused method parameter "evt".(û»éÙ
+H
+java:S1874‚",Remove this use of "hide"; it is deprecated.(›¿åùùÿÿÿÿ
+S
+java:S2209„"5Change this instance-reference to a static reference.(ĞĞÕÑ8”æáÔ0
+A
+java:S1172‹"*Remove this unused method parameter "evt".(È­ªÌ
+H
+java:S1874Œ",Remove this use of "hide"; it is deprecated.(›¿åùùÿÿÿÿ
+H
+java:S1874",Remove this use of "show"; it is deprecated.(åÈ¶úÿÿÿÿ
+X
+java:S2209§"5Change this instance-reference to a static reference.(·äü«úÿÿÿÿ8—æáÔ0
+I
+java:S1874©",Remove this use of "show"; it is deprecated.(§Ö¨f8—æáÔ0
+H
+java:S1874ª",Remove this use of "hide"; it is deprecated.(¡É¦©úÿÿÿÿ
+O
+java:S1874¬",Remove this use of "show"; it is deprecated.(åÈ¶úÿÿÿÿ8˜æáÔ0
+O
+java:S1874­",Remove this use of "hide"; it is deprecated.(›¿åùùÿÿÿÿ8˜æáÔ0

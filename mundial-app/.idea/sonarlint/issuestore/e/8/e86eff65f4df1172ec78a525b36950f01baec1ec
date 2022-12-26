@@ -1,0 +1,52 @@
+
+q
+java:S1192"VDefine a constant instead of duplicating this literal "com.mysql.jdbc.Driver" 3 times.(¹µÖÁüÿÿÿÿ
+
+java:S1192"dDefine a constant instead of duplicating this literal "jdbc:mysql://localhost:3306/MUNDIAL" 3 times.(â«Â›8ÒØäßÔ0
+f
+java:S1192€"HDefine a constant instead of duplicating this literal "mensaje" 3 times.(’ğĞ¤8ÒØäßÔ0
+m	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ¯™8ÓØäßÔ0
+c
+java:S20956"HUse try-with-resources or close this "Connection" in a "finally" clause.(¨àĞ”ÿÿÿÿÿ
+d
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‚€²8“ÛäßÔ0
+q
+java:S2095}"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(‹çéÊıÿÿÿÿ8”ÛäßÔ0
+d
+java:S20957"GUse try-with-resources or close this "Statement" in a "finally" clause.(‚€²8“ÛäßÔ0
+m
+java:S2095„"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(áêìï8”ÛäßÔ0
+W
+java:S1118":Add a private constructor to hide the implicit public one.(Æ‡¹¢8–ÛäßÔ0
+N
+java:S1172",Remove this unused method parameter "nivel".(í€ ¶üÿÿÿÿ8˜ÛäßÔ0
+O
+java:S4925"-Remove this "Class.forName()", it is useless.(¹µÖÁüÿÿÿÿ8™ÛäßÔ0
+J
+java:S1905"-Remove this unnecessary cast to "Connection".(â«Â›8™ÛäßÔ0
+F
+java:S2115")Add password protection to this database.(â«Â›8šÛäßÔ0
+O
+java:S49255"-Remove this "Class.forName()", it is useless.(¹µÖÁüÿÿÿÿ8œÛäßÔ0
+O
+java:S19056"-Remove this unnecessary cast to "Connection".(¨àĞ”ÿÿÿÿÿ8ÛäßÔ0
+K
+java:S21156")Add password protection to this database.(¨àĞ”ÿÿÿÿÿ8ÛäßÔ0
+;
+java:S2119:"Save and re-use this "Random".(–áÍÈ8 ÛäßÔ0
+:
+java:S2140;"Use "nextInt()" instead.(£Ù« úÿÿÿÿ8 ÛäßÔ0
+G
+java:S1659r"%Declare "control" on a separate line.(–ÁŞùÿÿÿÿ8¥ÛäßÔ0
+ˆ
+java:S2178u"fCorrect this "&" to "&&" and extract the right operand to a variable if it should always be evaluated.(ì”õÂùÿÿÿÿ8¸‡éàÔ0
+I
+java:S1125u"'Remove the unnecessary boolean literal.(ì”õÂùÿÿÿÿ8¦ÛäßÔ0
+O
+java:S4925z"-Remove this "Class.forName()", it is useless.(¹µÖÁüÿÿÿÿ8¦ÛäßÔ0
+J
+java:S1905{"-Remove this unnecessary cast to "Connection".(â«Â›8§ÛäßÔ0
+F
+java:S2115{")Add password protection to this database.(â«Â›8¨ÛäßÔ0
+I
+java:S1125|"'Remove the unnecessary boolean literal.(à‚¦ıüÿÿÿÿ8©ÛäßÔ0
