@@ -1,25 +1,21 @@
 
 package com.jmg.mundial.controller;
 
+import com.jmg.mundial.config.ConexionDB;
 import com.jmg.mundial.model.AlbumPais;
 import com.jmg.mundial.view.VALBUM;
 
 import javax.swing.*;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
 public class AlbumController {
 
-    public AlbumController() {
-    }
-    
-    public static void inicializaralbum(VALBUM valbum) throws ClassNotFoundException, SQLException
+
+    public static void inicializarAlbum(VALBUM valbum) throws ClassNotFoundException, SQLException
     {
-        Class.forName("com.mysql.jdbc.Driver");         
-        java.sql.Connection conn = (java.sql.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/MUNDIAL","root", "");
-        java.sql.Statement statement = conn.createStatement();
+        java.sql.Statement statement = ConexionDB.getConexion().createStatement();
         ResultSet rs = statement.executeQuery("SELECT * FROM albumpais ");
         
         AlbumPais[] paise = new AlbumPais[4];
@@ -33,7 +29,7 @@ public class AlbumController {
         valbum.setPaises(paise);
         valbum.show();
        AlbumController H = new AlbumController();
-       H.cargarfiguritas(valbum.getPaises()[0].getNombre_pais(),valbum);
+       H.cargarFiguritas(valbum.getPaises()[0].getNombre_pais(),valbum);
     
     }
    
@@ -66,7 +62,7 @@ public class AlbumController {
     
     
     
-    public void cargarfiguritas(String pais,VALBUM valbum) throws ClassNotFoundException, SQLException
+    public void cargarFiguritas(String pais, VALBUM valbum) throws ClassNotFoundException, SQLException
     {
         int j=0;
       

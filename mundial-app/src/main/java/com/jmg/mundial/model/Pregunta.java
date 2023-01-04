@@ -6,11 +6,15 @@
 
 package com.jmg.mundial.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Pregunta {
     private String pregunta;
     private Respuesta[] respuestas;

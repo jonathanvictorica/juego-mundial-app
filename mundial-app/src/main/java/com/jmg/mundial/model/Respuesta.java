@@ -6,25 +6,18 @@
 
 package com.jmg.mundial.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Respuesta {
     private String respuesta;
     private boolean correcta;
 
-    public Respuesta(String respuesta, boolean correcta) {
-        this.respuesta = respuesta;
-        this.correcta = correcta;
-    }
 
-    public Respuesta() {
-        
-    }
-
-
-    
-    
 }

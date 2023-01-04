@@ -240,7 +240,7 @@ public class VCOMBOS extends javax.swing.JFrame {
     private void cbocomboItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbocomboItemStateChanged
         try {
             ComboFiguritaController ED = new ComboFiguritaController();
-            ED.prepararcombo((String) this.cbocombo.getSelectedItem(), this);
+            ED.prepararCombo((String) this.cbocombo.getSelectedItem(), this);
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(VCOMBOS.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -257,7 +257,7 @@ public class VCOMBOS extends javax.swing.JFrame {
         C.setDificultadcombo("Dificil");
         this.hide();
         try {
-            new ComboFiguritaController().comboelegido(C, A.getPartida(), A);
+            new ComboFiguritaController().comboElegido(C, A.getPartida(), A);
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(VCOMBOS.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -292,7 +292,7 @@ public class VCOMBOS extends javax.swing.JFrame {
     public void inicializar(VJUGARPOR aThis) throws ClassNotFoundException, SQLException {
         this.A = aThis;
 
-        new ComboFiguritaController().inicializarvcombos(this);
+        new ComboFiguritaController().inicializarVcombos(this);
 
         this.show();
         A.hide();

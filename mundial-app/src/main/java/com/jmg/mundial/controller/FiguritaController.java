@@ -1,5 +1,6 @@
 package com.jmg.mundial.controller;
 
+import com.jmg.mundial.config.ConexionDB;
 import com.jmg.mundial.model.AlbumPais;
 import com.jmg.mundial.model.Figurita;
 import com.jmg.mundial.model.Partida;
@@ -8,30 +9,23 @@ import com.jmg.mundial.view.VJUGARPOR;
 import com.jmg.mundial.view.VPREGUNTAS;
 
 import javax.swing.*;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- * @author Jonathan
- */
+
 public class FiguritaController {
 
-    public FiguritaController() {
-    }
 
-    public static void figuritaelegido(Figurita comboelegido, Partida partida, VJUGARPOR A) throws ClassNotFoundException, SQLException {
-        VPREGUNTAS preguntas = new TriviaController().crearpregunta(comboelegido, null, partida, A);
+    public static void figuritaElegida(Figurita comboelegido, Partida partida, VJUGARPOR A) throws ClassNotFoundException, SQLException {
+        VPREGUNTAS preguntas = new TriviaController().crearPregunta(comboelegido, null, partida, A);
 
         preguntas.show();
 
 
     }
 
-    public static void llenarcobofiguritas(VFIGURITAS vfiguritas) throws ClassNotFoundException, SQLException {
-        Class.forName("com.mysql.jdbc.Driver");
-        java.sql.Connection conn = (java.sql.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/MUNDIAL", "root", "");
-        java.sql.Statement statement = conn.createStatement();
+    public static void llenarComboFiguritas(VFIGURITAS vfiguritas) throws ClassNotFoundException, SQLException {
+        java.sql.Statement statement = ConexionDB.getConexion().createStatement();
         ResultSet rs = statement.executeQuery("SELECT * FROM figuritas");
         vfiguritas.getCboFiguritasver().removeAllItems();
         while (rs.next()) {
@@ -39,11 +33,9 @@ public class FiguritaController {
         }
     }
 
-    public void prepararfigurita(String nombrefigurita, VFIGURITAS vfiguritas) throws ClassNotFoundException, SQLException {
+    public void prepararFigurita(String nombrefigurita, VFIGURITAS vfiguritas) throws ClassNotFoundException, SQLException {
 
-        Class.forName("com.mysql.jdbc.Driver");
-        java.sql.Connection conn = (java.sql.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/MUNDIAL", "root", "");
-        java.sql.Statement statement = conn.createStatement();
+        java.sql.Statement statement = ConexionDB.getConexion().createStatement();
         ResultSet rs = statement.executeQuery("SELECT * FROM figuritasinicializadas WHERE  FJUGADOR ='" + nombrefigurita + "'");
         Figurita fig = null;
         if (rs.next()) {
@@ -86,7 +78,7 @@ public class FiguritaController {
             vfiguritas.actualizarPantalla();
         }
 
-        /*asignar imagenes*/
+
 
 
     }

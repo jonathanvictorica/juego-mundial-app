@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package com.jmg.mundial.model;
 
@@ -21,14 +16,6 @@ public class ComboFigurita {
     public ComboFigurita() {
     }
 
-    
-    public ComboFigurita(int codigocombo, String nombrecombo, String dificultadcombo, String imagencombo, Figurita[] figuritascombo) {
-        this.codigocombo = codigocombo;
-        this.nombrecombo = nombrecombo;
-        this.dificultadcombo = dificultadcombo;
-        this.imagencombo = imagencombo;
-        this.figuritascombo = figuritascombo;
-    }
 
     public ComboFigurita(int codigocombo, String nombrecombo, String dificultadcombo, String imagencombo) {
         this.codigocombo = codigocombo;

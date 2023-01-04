@@ -170,10 +170,10 @@ public class VCANJE extends javax.swing.JFrame {
 
     private void cmdCanjeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCanjeActionPerformed
         try {
-            FiguritaCanjeController.CANJEARFIGURITA(this.ventanajugarpor.getPartida(), this.figuritarepetida, this.figuritacanje);
+            FiguritaCanjeController.canjearfigurita(this.ventanajugarpor.getPartida(), this.figuritarepetida, this.figuritacanje);
             this.inicializarventanacanje(this.ventanajugarpor);
             this.repaint();
-            new FiguritaCanjeController().inicializarcomboscanje(this);
+            new FiguritaCanjeController().inicializarCombosCanje(this);
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(VCANJE.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -183,7 +183,7 @@ public class VCANJE extends javax.swing.JFrame {
     private void cboRepetidoItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboRepetidoItemStateChanged
         try {
             FiguritaCanjeController e = new FiguritaCanjeController();
-            e.INICIALIZARFIGURITAS(this, false, (String) this.cboRepetido.getSelectedItem());
+            e.inicializarFiguritas(this, false, (String) this.cboRepetido.getSelectedItem());
             this.repaint();
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(VCANJE.class.getName()).log(Level.SEVERE, null, ex);
@@ -193,7 +193,7 @@ public class VCANJE extends javax.swing.JFrame {
     private void cbofaltanteItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbofaltanteItemStateChanged
         try {
             FiguritaCanjeController e = new FiguritaCanjeController();
-            e.INICIALIZARFIGURITAS(this, true, (String) this.cbofaltante.getSelectedItem());
+            e.inicializarFiguritas(this, true, (String) this.cbofaltante.getSelectedItem());
             this.repaint();
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(VCANJE.class.getName()).log(Level.SEVERE, null, ex);
@@ -315,7 +315,7 @@ public class VCANJE extends javax.swing.JFrame {
         ventanajugarpor = c;
         ventanajugarpor.hide();
         this.show();
-        new FiguritaCanjeController().inicializarcomboscanje(this);
+        new FiguritaCanjeController().inicializarCombosCanje(this);
 
 
     }

@@ -242,7 +242,7 @@ public class VALBUM extends javax.swing.JFrame {
         if (this.opc < 4) {
             this.opc = this.opc + 1;
             try {
-                new AlbumController().cargarfiguritas(this.getPaises()[this.opc - 1].getNombre_pais(), this);
+                new AlbumController().cargarFiguritas(this.getPaises()[this.opc - 1].getNombre_pais(), this);
             } catch (ClassNotFoundException | SQLException ex) {
                 Logger.getLogger(VALBUM.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -255,7 +255,7 @@ public class VALBUM extends javax.swing.JFrame {
         if (this.opc > 1) {
             this.opc = this.opc - 1;
             try {
-                new AlbumController().cargarfiguritas(this.getPaises()[this.opc - 1].getNombre_pais(), this);
+                new AlbumController().cargarFiguritas(this.getPaises()[this.opc - 1].getNombre_pais(), this);
             } catch (ClassNotFoundException | SQLException ex) {
                 Logger.getLogger(VALBUM.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -440,7 +440,7 @@ public class VALBUM extends javax.swing.JFrame {
         j = aThis;
         j.hide();
         try {
-            new AlbumController().inicializaralbum(this);
+            new AlbumController().inicializarAlbum(this);
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(VALBUM.class.getName()).log(Level.SEVERE, null, ex);
         }

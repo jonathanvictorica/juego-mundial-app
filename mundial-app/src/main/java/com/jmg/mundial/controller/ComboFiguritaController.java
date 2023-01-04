@@ -7,6 +7,7 @@
 package com.jmg.mundial.controller;
 
 
+import com.jmg.mundial.config.ConexionDB;
 import com.jmg.mundial.model.*;
 import com.jmg.mundial.view.VCOMBOS;
 import com.jmg.mundial.view.VJUGARPOR;
@@ -19,21 +20,18 @@ import java.sql.SQLException;
 
 public class ComboFiguritaController {
 
-    public ComboFiguritaController() {
-    }
 
-    public static void comboelegido(ComboFigurita comboelegido, Partida partida, VJUGARPOR A) throws ClassNotFoundException, SQLException {
-        VPREGUNTAS preguntas = new TriviaController().crearpregunta(null, comboelegido, partida, A);
+
+    public static void comboElegido(ComboFigurita comboelegido, Partida partida, VJUGARPOR A) throws ClassNotFoundException, SQLException {
+        VPREGUNTAS preguntas = new TriviaController().crearPregunta(null, comboelegido, partida, A);
 
         preguntas.show();
 
     }
 
-    public void prepararcombo(String nombrecombo, VCOMBOS vcombos) throws ClassNotFoundException, SQLException {
+    public void prepararCombo(String nombrecombo, VCOMBOS vcombos) throws ClassNotFoundException, SQLException {
         ComboFigurita COMBITOS = null;
-        Class.forName("com.mysql.jdbc.Driver");
-        java.sql.Connection conn = (java.sql.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/MUNDIAL", "root", "");
-        java.sql.Statement statement = conn.createStatement();
+        java.sql.Statement statement = ConexionDB.getConexion().createStatement();
         ResultSet rs = statement.executeQuery("SELECT * from combofigu where cnombre = '" + nombrecombo + "'");
 
         Figurita[] FIG = new Figurita[6];
@@ -98,7 +96,7 @@ public class ComboFiguritaController {
         }
     }
 
-    public static void inicializarvcombos(VCOMBOS aThis) throws ClassNotFoundException, SQLException {
+    public static void inicializarVcombos(VCOMBOS aThis) throws ClassNotFoundException, SQLException {
 
         Class.forName("com.mysql.jdbc.Driver");
 

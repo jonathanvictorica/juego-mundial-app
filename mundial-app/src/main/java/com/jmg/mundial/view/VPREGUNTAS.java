@@ -206,7 +206,7 @@ public class VPREGUNTAS extends javax.swing.JFrame {
         if(this.opcion1.isSelected()==true)
       {
           try {
-             new TriviaController().verificarrespuesta(part, figocom, figuritaocombo, this.opcion1.getText(), pregunta);
+             new TriviaController().verificarRespuesta(part, figocom, figuritaocombo, this.opcion1.getText(), pregunta);
               this.ini.show();
               this.hide();
           
@@ -218,7 +218,7 @@ public class VPREGUNTAS extends javax.swing.JFrame {
        if(this.opcion2.isSelected()==true)
       {
           try {
-               new TriviaController().verificarrespuesta(part, figocom, figuritaocombo, this.opcion2.getText(), pregunta);
+               new TriviaController().verificarRespuesta(part, figocom, figuritaocombo, this.opcion2.getText(), pregunta);
            this.ini.show();
               this.hide();
           } catch (  ClassNotFoundException | SQLException ex) {
@@ -229,7 +229,7 @@ public class VPREGUNTAS extends javax.swing.JFrame {
         if(this.opcion3.isSelected()==true)
       {
           try {
-               new TriviaController().verificarrespuesta(part, figocom, figuritaocombo, this.opcion3.getText(), pregunta);
+               new TriviaController().verificarRespuesta(part, figocom, figuritaocombo, this.opcion3.getText(), pregunta);
            this.ini.show();
               this.hide();
           } catch (  ClassNotFoundException | SQLException ex) {
@@ -240,7 +240,7 @@ public class VPREGUNTAS extends javax.swing.JFrame {
          if(this.opcion4.isSelected()==true)
       {
           try {
-               new TriviaController().verificarrespuesta(part, figocom, figuritaocombo, this.opcion4.getText(), pregunta);
+               new TriviaController().verificarRespuesta(part, figocom, figuritaocombo, this.opcion4.getText(), pregunta);
           this.ini.show();
               this.hide();
           } catch (  ClassNotFoundException | SQLException ex) {
@@ -251,7 +251,7 @@ public class VPREGUNTAS extends javax.swing.JFrame {
           if(this.opcion5.isSelected()==true)
       {
           try {
-               new TriviaController().verificarrespuesta(part, figocom, figuritaocombo, this.opcion5.getText(), pregunta);
+               new TriviaController().verificarRespuesta(part, figocom, figuritaocombo, this.opcion5.getText(), pregunta);
            this.ini.show();
               this.hide();
           } catch (  ClassNotFoundException | SQLException ex) {

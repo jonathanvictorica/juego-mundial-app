@@ -65,7 +65,7 @@ public class Inicio extends JFrame {
             }
         });
 
-        cmdretomarpartida.setText("RETOMAR PARTIDA");
+        cmdretomarpartida.setText("RETOMAR");
         cmdretomarpartida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdretomarpartidaActionPerformed(evt);
@@ -149,7 +149,7 @@ public class Inicio extends JFrame {
         try {
 
             if (this.validarrango() == true) {
-                new PartidaController().eliminarpartida(txtnombrejugador.getText());
+                new PartidaController().eliminarPartida(txtnombrejugador.getText());
             }
             this.vaciarcaja();
         } catch (SQLException | ClassNotFoundException ex) {
@@ -160,7 +160,7 @@ public class Inicio extends JFrame {
     private void cmdretomarpartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdretomarpartidaActionPerformed
         try {
             if (this.validarrango() == true) {
-                Partida partidanueva = new PartidaController().retomarpartida(this.txtnombrejugador.getText());
+                Partida partidanueva = new PartidaController().retomarPartida(this.txtnombrejugador.getText());
                 if (partidanueva != null) {
                     VJUGARPOR nuevaventana = new VJUGARPOR();
                     nuevaventana.inicializarvjugador(partidanueva, this);
@@ -177,7 +177,7 @@ public class Inicio extends JFrame {
     private void cmdiniciarpartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdiniciarpartidaActionPerformed
         try {
             if (this.validarrango() == true) {
-                Partida partidanueva = new PartidaController().crearnuevapartida(txtnombrejugador.getText());
+                Partida partidanueva = new PartidaController().crearNuevaPartida(txtnombrejugador.getText());
                 if (partidanueva != null) {
 
                     VJUGARPOR nuevaventana = new VJUGARPOR();

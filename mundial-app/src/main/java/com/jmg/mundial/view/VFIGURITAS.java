@@ -5,11 +5,12 @@ import com.jmg.mundial.model.Figurita;
 import org.edisoncor.gui.panel.PanelImage;
 
 import javax.swing.*;
+import java.awt.*;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static com.jmg.mundial.controller.FiguritaController.figuritaelegido;
+import static com.jmg.mundial.controller.FiguritaController.figuritaElegida;
 
 /**
  * @author Jonathan
@@ -57,19 +58,19 @@ public class VFIGURITAS extends javax.swing.JFrame {
         });
 
         lblPais.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblPais.setForeground(new java.awt.Color(255, 255, 255));
+        lblPais.setForeground(Color.WHITE);
         lblPais.setText("País");
 
         lblNacionalidad.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblNacionalidad.setForeground(new java.awt.Color(255, 255, 255));
+        lblNacionalidad.setForeground(Color.WHITE);
         lblNacionalidad.setText("Nacionalidad");
 
         lblPosición.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblPosición.setForeground(new java.awt.Color(255, 255, 255));
+        lblPosición.setForeground(Color.WHITE);
         lblPosición.setText("Posición");
 
         lblNombrejugador.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblNombrejugador.setForeground(new java.awt.Color(255, 255, 255));
+        lblNombrejugador.setForeground(Color.WHITE);
         lblNombrejugador.setText("Nombre de Jugador");
 
         cboFiguritasver.addItemListener(new java.awt.event.ItemListener() {
@@ -79,7 +80,7 @@ public class VFIGURITAS extends javax.swing.JFrame {
         });
 
         lblfiguritasver.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblfiguritasver.setForeground(new java.awt.Color(255, 255, 255));
+        lblfiguritasver.setForeground(Color.WHITE);
         lblfiguritasver.setText("Figuritas");
 
         cmdSalir.setText("VOLVER");
@@ -98,7 +99,7 @@ public class VFIGURITAS extends javax.swing.JFrame {
         lblImagenverLayout.setVerticalGroup(lblImagenverLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addGap(0, 187, Short.MAX_VALUE));
 
         lblColeccionado.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblColeccionado.setForeground(new java.awt.Color(255, 255, 255));
+        lblColeccionado.setForeground(Color.WHITE);
         lblColeccionado.setText("País");
 
         javax.swing.GroupLayout panelImage1Layout = new javax.swing.GroupLayout(panelImage1);
@@ -144,7 +145,7 @@ public class VFIGURITAS extends javax.swing.JFrame {
     private void cboFiguritasverItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboFiguritasverItemStateChanged
         try {
 
-            new FiguritaController().prepararfigurita((String) this.cboFiguritasver.getSelectedItem(), this);
+            new FiguritaController().prepararFigurita((String) this.cboFiguritasver.getSelectedItem(), this);
 
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(VFIGURITAS.class.getName()).log(Level.SEVERE, null, ex);
@@ -155,7 +156,7 @@ public class VFIGURITAS extends javax.swing.JFrame {
 
     private void cmdJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdJugarActionPerformed
         try {
-            figuritaelegido(f, c.getPartida(), c);
+            figuritaElegida(f, c.getPartida(), c);
             this.hide();
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(VFIGURITAS.class.getName()).log(Level.SEVERE, null, ex);
@@ -171,7 +172,7 @@ public class VFIGURITAS extends javax.swing.JFrame {
         try {
 
             this.c = c;
-            new FiguritaController().llenarcobofiguritas(this);
+            new FiguritaController().llenarComboFiguritas(this);
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(VFIGURITAS.class.getName()).log(Level.SEVERE, null, ex);
         }

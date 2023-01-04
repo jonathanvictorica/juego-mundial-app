@@ -6,37 +6,32 @@
 
 package com.jmg.mundial.model;
 
+import com.jmg.mundial.config.ConexionDB;
 import com.jmg.mundial.view.VGANADOR;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class PartidaFigurita {
     private Partida partida;
     private Figurita[] figurita;
 
-    public PartidaFigurita(Partida partida, Figurita[] figurita) {
-        this.partida = partida;
-        this.figurita = figurita;
-    }
 
-
-    
-    
-   public static PartidaFigurita inicializarpartida(Partida parti) throws ClassNotFoundException, SQLException
+    public static PartidaFigurita inicializarpartida(Partida parti) throws ClassNotFoundException, SQLException
    {
            PartidaFigurita partidafigu=null;
-           ArrayList<Figurita> fig = new ArrayList<>();
-           Class.forName("com.mysql.jdbc.Driver");         
-           java.sql.Connection conn = (java.sql.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/MUNDIAL","root", "");
-           java.sql.Statement statement = conn.createStatement();
-           ResultSet rs;
+       ArrayList<Figurita> fig = new ArrayList<>();
+       java.sql.Statement statement = ConexionDB.getConexion().createStatement();
+       ResultSet rs;
            rs = statement.executeQuery("SELECT albumpais.codigoalbum as codigoalbum, "
                    + "albumpais.nombre_pais as pais, albumpais.nacionalidad as naciona,"
                    + " figuritas.nombrejugador as nombrejugador , figuritas.direccionimagen as direccion, "

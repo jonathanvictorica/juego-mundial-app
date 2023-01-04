@@ -110,7 +110,7 @@ public class VGANADOR extends javax.swing.JFrame {
 
     private void cmdAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdAceptarActionPerformed
         try {
-            new PartidaController().ganarpartida(a);
+            new PartidaController().ganarPartida(a);
 
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(VGANADOR.class.getName()).log(Level.SEVERE, null, ex);

@@ -1,39 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package com.jmg.mundial.model;
 
+import com.jmg.mundial.config.ConexionDB;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class PartidaCombo {
     private Partida partidas;
     private ComboFigurita[] combos;
 
-    public PartidaCombo(Partida partidas, ComboFigurita[] combos) {
-        this.partidas = partidas;
-        this.combos = combos;
-    }
+
 
 
     
    public static PartidaCombo inicializarpartida(Partida parti) throws ClassNotFoundException, SQLException
    {
-           ArrayList<ComboFigurita> com = new ArrayList<>();
-           Class.forName("com.mysql.jdbc.Driver");         
-           java.sql.Connection conn = (java.sql.Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/MUNDIAL","root", "");
-           java.sql.Statement statement = conn.createStatement();
-           ResultSet rs;
+       ArrayList<ComboFigurita> com = new ArrayList<>();
+       java.sql.Statement statement = ConexionDB.getConexion().createStatement();
+       ResultSet rs;
            
            rs = statement.executeQuery("SELECT combos.codigocombo as codigocombo,combos.nombrecombo AS nombrecombo,combos.dificultadcombo as dificultad, combos.imagencombo as imagen FROM combos,partidacombo WHERE combos.codigocombo = partidacombo.codigocombo and partidacombo.codigopartida = '" + parti.getCodigopartida() + "'");
            ComboFigurita combito;

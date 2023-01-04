@@ -40,11 +40,6 @@ public class DataLoadConfig {
 
 
             files.stream().map(file -> "script/" + file).forEach(name -> {
-//                ClassPathResource resource = new ClassPathResource(name);
-//                ScriptUtils.executeSqlScript(ConexionDB.getConexion(), new EncodedResource(resource),
-//                        false, false,
-//                        ScriptUtils.DEFAULT_COMMENT_PREFIX, ScriptUtils.EOF_STATEMENT_SEPARATOR,
-//                        ScriptUtils.DEFAULT_BLOCK_COMMENT_START_DELIMITER, ScriptUtils.DEFAULT_BLOCK_COMMENT_END_DELIMITER);
 
 
                 ResourceDatabasePopulator resourceDatabasePopulator = new ResourceDatabasePopulator(CONTINUE_ERROR, false, "UTF-8", new ClassPathResource(name));
