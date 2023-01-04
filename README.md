@@ -83,7 +83,7 @@ Tareas Pendiente: Implementar algún ORM como spring-jpa-data, o spring-mongodb 
 ![Demo](https://github.com/jonathanvictorica/juego-mundial-app/blob/develop/docs/10.png) <br />
 * En caso de ganar ya sea por combo de figuritas o figuritas individuales alguna que ya se tiene coleccionada, el juego da la posbilidad de canjearla por otra figurita que tenga el mismo nivel de dificultad.
 ![Demo](https://github.com/jonathanvictorica/juego-mundial-app/blob/develop/docs/11.png) <br />
-* Pantalla de canje de figuritas
+* Pantalla de canje de figuritas <br />
 ![Demo](https://github.com/jonathanvictorica/juego-mundial-app/blob/develop/docs/12.png) <br />
 
 
