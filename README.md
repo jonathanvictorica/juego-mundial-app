@@ -2,9 +2,9 @@
 
 ## Índice
 
-* [Motivación](#-motivacion)
-* [Objetivo del Juego](#-objetivo-del-juego)
-* [Play](#-play)
+- [Motivación](#-motivacion)
+- [Objetivo del Juego](#-objetivo-del-juego)
+- [Play](#-play)
 - [Documentación Técnica de la Solución](#-documentacin-tcnica-de-la-solucin)
     - [Modelo de Base de Datos](#-modelo-de-base-de-datos)
     - [Diagrama de Clases](#diagrama-de-clases)
